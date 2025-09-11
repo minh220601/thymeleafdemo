@@ -1,13 +1,14 @@
-<header th:fragment="header" xmlns:th="http://www.thymeleaf.org">
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" th:href="@{/tutorials}">
-            Demo
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar" aria->
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="#topNavbar">
-            <ul class="navbar-nav">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div th:fragment="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" th:href="@{/tutorials}">Thymeleaf Demo</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/tutorials}">Tutorials</a>
                 </li>
@@ -17,4 +18,6 @@
             </ul>
         </div>
     </nav>
-</header>
+</div>
+</body>
+</html>
